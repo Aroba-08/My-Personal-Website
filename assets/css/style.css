@@ -18,6 +18,7 @@ body {
     color: var(--color-body);
     font-family: var(--font-base), sans-serif;
 }
+
 h1,h2,h3,h4,h5,h6 {
     color: var(--color-heading);
     font-weight: 700;
@@ -30,7 +31,14 @@ h3:hover {
   }
   blink {
     animation: 1s linear infinite condemned_blink_effect;
+    color: var(--color-heading);
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    margin-left: 20px;
   }
+
+  blink:hover {
+    color: #ff3f34;
+}
   
   @keyframes condemned_blink_effect {
     0% {
@@ -53,7 +61,7 @@ a {
 }
 
 a:hover {
-    color: white;
+    color: #ff3f34;
 }
 
 
@@ -215,7 +223,7 @@ a:hover {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-base);
+    background-color: #ff3f34;
     border-radius: 100px;
     font-size: 24px;
 }
